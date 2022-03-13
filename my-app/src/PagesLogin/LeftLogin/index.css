@@ -1,0 +1,146 @@
+.left-side {
+  width: 67.1rem;
+  padding: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left-side img {
+  align-self: flex-start;
+  margin-bottom: 9.7rem;
+}
+
+.div-login {
+  width: 47.5rem;
+  height: 47rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-login h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  display: flex;
+  align-items: center;
+
+  color: #0e0e58;
+  margin-bottom: 1rem;
+}
+
+.title-login p {
+  width: 38.4rem;
+  height: 4.2rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+
+  color: #3e3f44;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  width: 47.5rem;
+  height: 30.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.email-box,
+.password-box {
+  margin-bottom: 2.2rem;
+}
+
+.form-login label {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+
+  color: #0e0e58;
+}
+
+div.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root,
+div.css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #3e3f44;
+}
+
+.form-login button {
+  all: unset;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.5rem;
+  height: 4.3rem;
+
+  background: #3758cc;
+  border-radius: 4px;
+
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 19px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-login button:hover {
+  background: #3758cc;
+}
+
+.div-login span {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  color: #3e3f44;
+  margin-bottom: 2.3rem;
+  cursor: pointer;
+}
+
+.register {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #828292;
+  align-self: center;
+}
+
+.register a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: #3758cc;
+}
+
+p.css-1wc848c-MuiFormHelperText-root.Mui-error {
+  font-size: 1rem;
+}

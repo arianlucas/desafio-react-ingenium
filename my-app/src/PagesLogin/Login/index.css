@@ -1,0 +1,14 @@
+.Login {
+  display: flex;
+  background: #ffffff;
+}
+
+.poppins-font {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.left-side,
+.right-side {
+  height: 100vh;
+}
