@@ -1,7 +1,5 @@
 import "./index.css";
-import "./header.css";
 import "../global.css";
-import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Input from "@mui/material/TextField";
@@ -11,27 +9,17 @@ import Fab from "@mui/material/Fab";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import CallIcon from "@mui/icons-material/Call";
 
-export function Lists() {
-  let navigate = useNavigate();
-
+export function Details() {
   return (
-    <div className="Lists">
+    <div className="Details">
       <header>
-        <img
-          src="./imgs/icon_menu.svg"
-          alt="ícone menu"
-          className="icon_menu"
-        />
-        <img
-          src="./imgs/logo-ingcorp.png"
-          alt="Logo ingcorp"
-          className="logo_ingcorp"
-        />
+        <img src="./imgs/icon_menu.svg" alt="" />
+        <img src="./imgs/logo-ingcorp.png" alt="" />
         <div className="user-box">
-          <img src="./imgs/user_icon-listas.svg" alt="icone do usuario" />
-          <p className="poppins">Lucas Romero Cardim</p>
+          <img src="./imgs/user_icon-listas.svg" alt="" />
+          <p>Lucas Romero Cardim</p>
         </div>
-        <p className="title-group roboto">Grupo: Prospecção</p>
+        <p className="title-group">Grupo: Prospecção</p>
         <Button
           variant="contained"
           color="success"
@@ -43,7 +31,6 @@ export function Lists() {
           </div>
         </Button>
         <Input
-          className="roboto"
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
@@ -54,22 +41,9 @@ export function Lists() {
           placeholder="Pausas"
         />
         <div className="final-icons">
-          <img
-            src="./imgs/settings-icon-listas.svg"
-            className="settings-icon"
-            alt="Icone das configurações"
-          />
-          <img
-            src="./imgs/notifications-icon-listas.svg"
-            className="notifications-icon"
-            alt="Icone das notificações"
-          />
-          <img
-            src="./imgs/logout-icon-listas.svg"
-            className="logout-icon"
-            onClick={() => navigate("/")}
-            alt="Icone de logout"
-          />
+          <img src="./imgs/settings-icon-listas.svg" alt="" />
+          <img src="./imgs/notifications-icon-listas.svg" alt="" />
+          <img src="./imgs/logout-icon-listas.svg" alt="" />
         </div>
       </header>
       <div className="main-content">
@@ -112,7 +86,7 @@ export function Lists() {
             </Fab>
           </div>
         </div>
-        <div className="main-page">aaaa</div>
+        <div className="main-page">bbbbb</div>
       </div>
     </div>
   );

@@ -8,8 +8,13 @@ html {
   font-size: 62.5%;
 }
 
-#root {
+body {
   min-height: 100vh;
+  overflow-y: hidden;
+}
+
+#root {
+  height: 100vh;
 }
 
 .App {
