@@ -58,7 +58,7 @@
 .last-column {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 0.8rem;
 
