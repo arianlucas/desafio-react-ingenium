@@ -1,5 +1,9 @@
+.ingweb-menu {
+  display: flex;
+}
+
 .icon_menu {
-  margin-right: 3.5rem;
+  margin-right: 3.2rem;
 }
 
 .logo_ingcorp {
@@ -7,7 +11,6 @@
 }
 
 .user-box {
-  margin-right: 11.2rem;
   display: flex;
   align-items: center;
   width: 21.027rem;
@@ -23,8 +26,6 @@
 }
 
 .title-group {
-  margin-right: 11.219rem;
-
   width: 10.734rem;
   height: 1.55rem;
   font-weight: 400;
@@ -34,11 +35,15 @@
   color: #3e3f44;
 }
 
+.button-input_header {
+  display: flex;
+  gap: 0.8rem;
+}
+
 button.css-ke5b6m-MuiButtonBase-root-MuiButton-root {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 0.883rem;
   background-color: #45c777;
   width: 16.69rem;
   height: 5rem;
@@ -52,7 +57,6 @@ button.css-ke5b6m-MuiButtonBase-root-MuiButton-root {
 }
 
 div.roboto.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-  margin-right: 11.597rem;
   width: 13.4rem;
   height: 3.6rem;
   align-self: flex-start;
@@ -64,6 +68,10 @@ div.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   line-height: 14px;
 
   color: #3e3f44;
+}
+
+input.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0.8rem 1.2rem;
 }
 
 .final-icons {
@@ -79,7 +87,6 @@ div.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
 
 .settings-icon {
   cursor: pointer;
-  margin-right: 2.4rem;
 }
 
 .notifications-icon {
@@ -91,5 +98,4 @@ div.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
 
 .logout-icon {
   cursor: pointer;
-  margin-left: 2.4rem;
 }

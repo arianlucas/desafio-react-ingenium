@@ -29,6 +29,7 @@
 
   width: 8.6%;
   height: 4rem;
+  margin-right: 1rem;
 }
 
 .titles-head {
@@ -88,6 +89,7 @@
 
   width: 8.6%;
   height: 3.4rem;
+  margin-right: 1rem;
 }
 
 .column-body {
@@ -102,21 +104,35 @@
 }
 
 .column-body p,
-.first-column-body p {
+.first-column-body p,
+a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 18px;
 
-  display: flex;
-  align-items: center;
+  text-align: center;
 
   color: #27282e;
+  text-decoration: none;
+}
+
+a {
+  color: #5b78ff;
+}
+
+.contact,
+.agente {
+  gap: 0.2rem;
 }
 
 .agente {
   padding: 0.2rem 0.8rem;
+}
+
+p.red-agente {
+  color: #f7404e;
 }
 
 .action {

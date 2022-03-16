@@ -1,136 +1,137 @@
 import "./index.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { NavLink } from "react-router-dom";
 
 export function Table() {
   const rows = [
     {
       id: 1,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Nenhum agente",
+      agente: { nome: "Nenhum", sobrenome: "agente" },
       prioridade: "./imgs/bandeira-azul.png",
     },
     {
       id: 2,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-verde.png",
     },
     {
       id: 3,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-azul.png",
     },
     {
       id: 4,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-verde.png",
     },
     {
       id: 5,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-azul.png",
     },
     {
       id: 6,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-verde.png",
     },
     {
       id: 7,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-azul.png",
     },
     {
       id: 8,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-verde.png",
     },
     {
       id: 9,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-azul.png",
     },
     {
       id: 10,
       caso: 200121312352134,
-      contato: "Pablo Henrique",
+      contato: { nome: "Pablo", sobrenome: "Henrique" },
       status: "Cancelado",
       empresa: "IngDesk",
       assunto: "Parcelamento",
       solicitacao: "Parcelamento",
       prazo: "01/12/2021",
       tarefas: "02 tarefas",
-      agente: "Lucas Silva",
+      agente: { nome: "Lucas", sobrenome: "Silva" },
       prioridade: "./imgs/bandeira-verde.png",
     },
   ];
@@ -188,10 +189,11 @@ export function Table() {
         {rows.map((row) => (
           <div className="row-body" key={row.id}>
             <div className="first-column-body">
-              <p>{row.caso}</p>
+              <NavLink to={"/details"}>{row.caso}</NavLink>
             </div>
-            <div className="column-body">
-              <p>{row.contato}</p>
+            <div className="column-body contact">
+              <p>{row.contato.nome}</p>
+              <p>{row.contato.sobrenome}</p>
             </div>
             <div className="column-body">
               <p>{row.status}</p>
@@ -212,7 +214,12 @@ export function Table() {
               <p>{row.tarefas}</p>
             </div>
             <div className="column-body agente">
-              <p>{row.agente}</p>
+              <p className={row.agente.nome === "Nenhum" && "red-agente"}>
+                {row.agente.nome}
+              </p>
+              <p className={row.agente.nome === "Nenhum" && "red-agente"}>
+                {row.agente.sobrenome}
+              </p>
             </div>
             <div className="column-body">
               <img src={row.prioridade} alt="" />

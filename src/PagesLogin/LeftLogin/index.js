@@ -39,85 +39,88 @@ export function LeftLogin() {
 
   return (
     <div className="left-side">
-      <img src="./imgs/logo-login.svg" alt="" />
+      <div className="container-left-login">
+        <img src="./imgs/logo-login.svg" alt="" />
 
-      <div className="div-login poppins-font">
-        <div className="title-login">
-          <h1>Olá, Bem vindo!</h1>
-          <p>
-            Solução de gerenciamento de relacionamento para empresas e pessoas.
+        <div className="div-login poppins-font">
+          <div className="title-login">
+            <h1>Olá, Bem vindo!</h1>
+            <p>
+              Solução de gerenciamento de relacionamento para empresas e
+              pessoas.
+            </p>
+          </div>
+
+          <form className="form-login" onSubmit={handleSubmit}>
+            <div className="email-box">
+              <label htmlFor="email" className="poppins-font">
+                Email*
+              </label>
+              <Input
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                error={errorEmail}
+                helperText={errorEmail && "Campo vazio"}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <EmailOutlinedIcon fontSize="large" />
+                    </InputAdornment>
+                  ),
+                }}
+                sx={{ width: "47.5rem", height: "4.8rem" }}
+                placeholder="Teste@gmail.com"
+              />
+            </div>
+            <div className="password-box">
+              <label htmlFor="senha" className="poppins-font">
+                Senha*
+              </label>
+              <Input
+                id="senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                error={errorPw}
+                helperText={errorPw && "Campo vazio"}
+                type={typePassword}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      {typePassword === "password" ? (
+                        <RemoveRedEyeOutlinedIcon
+                          fontSize="large"
+                          onClick={handleTypePassword}
+                          sx={{ cursor: "pointer" }}
+                        />
+                      ) : (
+                        <VisibilityOffOutlinedIcon
+                          fontSize="large"
+                          onClick={handleTypePassword}
+                          sx={{ cursor: "pointer" }}
+                        />
+                      )}
+                    </InputAdornment>
+                  ),
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <VpnKeyOutlinedIcon fontSize="large" />
+                    </InputAdornment>
+                  ),
+                }}
+                placeholder="Placeholder"
+              />
+            </div>
+
+            <Button variant="contained" type="submit">
+              Entrar
+            </Button>
+          </form>
+          <span>Esqueci minha senha</span>
+          <p className="poppins-font register">
+            Não tem uma conta? <a href="/">Cadastre-se</a>
           </p>
         </div>
-
-        <form className="form-login" onSubmit={handleSubmit}>
-          <div className="email-box">
-            <label htmlFor="email" className="poppins-font">
-              Email*
-            </label>
-            <Input
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              error={errorEmail}
-              helperText={errorEmail && "Campo vazio"}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <EmailOutlinedIcon fontSize="large" />
-                  </InputAdornment>
-                ),
-              }}
-              sx={{ width: "47.5rem", height: "4.8rem" }}
-              placeholder="Teste@gmail.com"
-            />
-          </div>
-          <div className="password-box">
-            <label htmlFor="senha" className="poppins-font">
-              Senha*
-            </label>
-            <Input
-              id="senha"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              error={errorPw}
-              helperText={errorPw && "Campo vazio"}
-              type={typePassword}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    {typePassword === "password" ? (
-                      <RemoveRedEyeOutlinedIcon
-                        fontSize="large"
-                        onClick={handleTypePassword}
-                        sx={{ cursor: "pointer" }}
-                      />
-                    ) : (
-                      <VisibilityOffOutlinedIcon
-                        fontSize="large"
-                        onClick={handleTypePassword}
-                        sx={{ cursor: "pointer" }}
-                      />
-                    )}
-                  </InputAdornment>
-                ),
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <VpnKeyOutlinedIcon fontSize="large" />
-                  </InputAdornment>
-                ),
-              }}
-              placeholder="Placeholder"
-            />
-          </div>
-
-          <Button variant="contained" type="submit">
-            Entrar
-          </Button>
-        </form>
-        <span>Esqueci minha senha</span>
-        <p className="poppins-font register">
-          Não tem uma conta? <a href="/">Cadastre-se</a>
-        </p>
       </div>
     </div>
   );

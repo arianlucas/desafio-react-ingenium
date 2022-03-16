@@ -23,42 +23,47 @@ export function Lists() {
   return (
     <div className="Lists">
       <header>
-        <img
-          src="./imgs/icon_menu.svg"
-          alt="ícone menu"
-          className="icon_menu"
-        />
-        <img
-          src="./imgs/logo-ingcorp.png"
-          alt="Logo ingcorp"
-          className="logo_ingcorp"
-        />
-        <div className="user-box">
-          <img src="./imgs/user_icon-listas.svg" alt="icone do usuario" />
-          <p className="poppins">Lucas Romero Cardim</p>
-        </div>
-        <p className="title-group roboto">Grupo: Prospecção</p>
-        <Button
-          variant="contained"
-          color="success"
-          startIcon={<PhoneInTalkIcon />}
-        >
-          <div className="infos-button">
-            <p>Livre</p>
-            <span>00:00:00</span>
+        <div className="ingweb-menu">
+          <img
+            src="./imgs/icon_menu.svg"
+            alt="ícone menu"
+            className="icon_menu"
+          />
+          <img
+            src="./imgs/logo-ingcorp.png"
+            alt="Logo ingcorp"
+            className="logo_ingcorp"
+          />
+          <div className="user-box">
+            <img src="./imgs/user_icon-listas.svg" alt="icone do usuario" />
+            <p className="poppins">Lucas Romero Cardim</p>
           </div>
-        </Button>
-        <Input
-          className="roboto"
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <ArrowForwardIosIcon />
-              </InputAdornment>
-            ),
-          }}
-          placeholder="Pausas"
-        />
+        </div>
+
+        <p className="title-group roboto">Grupo: Prospecção</p>
+        <div className="button-input_header">
+          <Button
+            variant="contained"
+            color="success"
+            startIcon={<PhoneInTalkIcon />}
+          >
+            <div className="infos-button">
+              <p>Livre</p>
+              <span>00:00:00</span>
+            </div>
+          </Button>
+          <Input
+            className="roboto"
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <ArrowForwardIosIcon />
+                </InputAdornment>
+              ),
+            }}
+            placeholder="Pausas"
+          />
+        </div>
         <div className="final-icons">
           <img
             src="./imgs/settings-icon-listas.svg"
@@ -119,77 +124,79 @@ export function Lists() {
           </div>
         </div>
         <div className="main-page">
-          <div className="search-bar">
-            <h1 className="poppins">Casos</h1>
-            <Input
-              className="search-input poppins"
-              placeholder="Buscar por número do Caso"
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <SearchIcon fontSize="large" />
-                  </InputAdornment>
-                ),
-              }}
-            />
-            <Button
-              startIcon={<FilterListIcon color="primary" />}
-              className="filter-button poppins"
-            >
-              Filtrar
-            </Button>
-            <div className="date-container">
+          <div className="main-container">
+            <div className="search-bar">
+              <h1 className="poppins">Casos</h1>
+              <Input
+                className="search-input poppins"
+                placeholder="Buscar por número do Caso"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <SearchIcon fontSize="large" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
               <Button
-                endIcon={<EventIcon color="primary" />}
-                className="date-button"
+                startIcon={<FilterListIcon color="primary" />}
+                className="filter-button poppins"
               >
-                12 de Dezembro, 2021
+                Filtrar
               </Button>
-              <p className="poppins">até</p>
+              <div className="date-container">
+                <Button
+                  endIcon={<EventIcon color="primary" />}
+                  className="date-button"
+                >
+                  12 de Dezembro, 2021
+                </Button>
+                <p className="poppins">até</p>
+                <Button
+                  endIcon={<EventIcon color="primary" />}
+                  className="date-button"
+                >
+                  12 de Dezembro, 2021
+                </Button>
+              </div>
               <Button
-                endIcon={<EventIcon color="primary" />}
-                className="date-button"
+                variant="contained"
+                className="add-cases"
+                startIcon={<AddCircleOutlineIcon color="inherit" />}
               >
-                12 de Dezembro, 2021
+                Caso
               </Button>
             </div>
-            <Button
-              variant="contained"
-              className="add-cases"
-              startIcon={<AddCircleOutlineIcon color="inherit" />}
-            >
-              Caso
-            </Button>
-          </div>
-          <div className="filter-bar">
-            <p className="poppins">Selecione por Status:</p>
-            <Button
-              className="filter-buttons white-buttons"
-              variant="contained"
-            >
-              Em tratamento
-            </Button>
-            <Button className="filter-buttons" variant="contained">
-              Pendente
-            </Button>
-            <Button
-              className="filter-buttons white-buttons"
-              variant="contained"
-            >
-              Concluídos
-            </Button>
-            <Button className="filter-buttons" variant="contained">
-              Cancelados
-            </Button>
-          </div>
-          <img
-            src="./imgs/user_icon-listas.svg"
-            alt="icone do usuario"
-            className="icone-main"
-          />
-          <div className="table-list">
-            {/* <DenseTable /> */}
-            <Table />
+            <div className="filter-bar">
+              <p className="poppins">Selecione por Status:</p>
+              <Button
+                className="filter-buttons white-buttons"
+                variant="contained"
+              >
+                Em tratamento
+              </Button>
+              <Button className="filter-buttons" variant="contained">
+                Pendente
+              </Button>
+              <Button
+                className="filter-buttons white-buttons"
+                variant="contained"
+              >
+                Concluídos
+              </Button>
+              <Button className="filter-buttons" variant="contained">
+                Cancelados
+              </Button>
+            </div>
+            <img
+              src="./imgs/user_icon-listas.svg"
+              alt="icone do usuario"
+              className="icone-main"
+            />
+            <div className="table-list">
+              {/* <DenseTable /> */}
+              <Table />
+            </div>
           </div>
         </div>
       </div>

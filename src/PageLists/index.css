@@ -17,6 +17,7 @@
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.2rem;
 
   height: 7.2rem;
@@ -47,14 +48,25 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 1.2rem;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #e5e5e5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 2.4rem;
 
   width: 100%;
-  height: 80.4rem;
+  height: 90%;
 
   background: #ffffff;
   border-radius: 10px;
-  margin: 1.2rem;
 }
 
 .search-bar {
@@ -153,6 +165,7 @@ div.search-input.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 21px;
+  text-transform: none;
 
   color: #ffffff;
 }
@@ -210,6 +223,7 @@ div.search-input.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
 
 .icone-main {
   align-self: flex-end;
+  margin: 1.2rem 0;
 }
 
 .table-list {
