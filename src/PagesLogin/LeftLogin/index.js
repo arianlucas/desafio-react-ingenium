@@ -40,7 +40,7 @@ export function LeftLogin() {
   return (
     <div className="left-side">
       <div className="container-left-login">
-        <img src="./imgs/logo-login.svg" alt="" />
+        <img src="./imgs/icone_login.svg" alt="" />
 
         <div className="div-login poppins-font">
           <div className="title-login">

@@ -13,7 +13,7 @@ export function Details() {
   return (
     <div className="Details">
       <header>
-        <img src="./imgs/icon_menu.svg" alt="" />
+        <img src="./imgs/icon_menu_header.svg" alt="" />
         <img src="./imgs/logo-ingcorp.png" alt="" />
         <div className="user-box">
           <img src="./imgs/user_icon-listas.svg" alt="" />

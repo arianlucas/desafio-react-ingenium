@@ -25,7 +25,7 @@ export function Lists() {
       <header>
         <div className="ingweb-menu">
           <img
-            src="./imgs/icon_menu.svg"
+            src="./imgs/icon_menu_header.svg"
             alt="ícone menu"
             className="icon_menu"
           />
