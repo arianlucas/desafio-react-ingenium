@@ -1,6 +1,8 @@
 import "./index.css";
 import "./header.css";
 import "../global.css";
+import { DenseTable } from "../Table/index";
+import { Table } from "../SimpleTable";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
@@ -10,6 +12,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Fab from "@mui/material/Fab";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import CallIcon from "@mui/icons-material/Call";
+import SearchIcon from "@mui/icons-material/Search";
+import FilterListIcon from "@mui/icons-material/FilterList";
+import EventIcon from "@mui/icons-material/Event";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 export function Lists() {
   let navigate = useNavigate();
@@ -112,7 +118,80 @@ export function Lists() {
             </Fab>
           </div>
         </div>
-        <div className="main-page">aaaa</div>
+        <div className="main-page">
+          <div className="search-bar">
+            <h1 className="poppins">Casos</h1>
+            <Input
+              className="search-input poppins"
+              placeholder="Buscar por número do Caso"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <SearchIcon fontSize="large" />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <Button
+              startIcon={<FilterListIcon color="primary" />}
+              className="filter-button poppins"
+            >
+              Filtrar
+            </Button>
+            <div className="date-container">
+              <Button
+                endIcon={<EventIcon color="primary" />}
+                className="date-button"
+              >
+                12 de Dezembro, 2021
+              </Button>
+              <p className="poppins">até</p>
+              <Button
+                endIcon={<EventIcon color="primary" />}
+                className="date-button"
+              >
+                12 de Dezembro, 2021
+              </Button>
+            </div>
+            <Button
+              variant="contained"
+              className="add-cases"
+              startIcon={<AddCircleOutlineIcon color="inherit" />}
+            >
+              Caso
+            </Button>
+          </div>
+          <div className="filter-bar">
+            <p className="poppins">Selecione por Status:</p>
+            <Button
+              className="filter-buttons white-buttons"
+              variant="contained"
+            >
+              Em tratamento
+            </Button>
+            <Button className="filter-buttons" variant="contained">
+              Pendente
+            </Button>
+            <Button
+              className="filter-buttons white-buttons"
+              variant="contained"
+            >
+              Concluídos
+            </Button>
+            <Button className="filter-buttons" variant="contained">
+              Cancelados
+            </Button>
+          </div>
+          <img
+            src="./imgs/user_icon-listas.svg"
+            alt="icone do usuario"
+            className="icone-main"
+          />
+          <div className="table-list">
+            {/* <DenseTable /> */}
+            <Table />
+          </div>
+        </div>
       </div>
     </div>
   );
