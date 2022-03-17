@@ -1,9 +1,9 @@
 import "./index.css";
-import "./header.css";
+import "./header-list.css";
 import "../global.css";
-import { DenseTable } from "../Table/index";
 import { Table } from "../SimpleTable";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Input from "@mui/material/TextField";
@@ -19,6 +19,7 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 export function Lists() {
   let navigate = useNavigate();
+  const [openMenu, setOpenMenu] = useState(true);
 
   return (
     <div className="Lists">
@@ -28,6 +29,7 @@ export function Lists() {
             src="./imgs/icon_menu_header.svg"
             alt="ícone menu"
             className="icon_menu"
+            onClick={() => setOpenMenu(!openMenu)}
           />
           <img
             src="./imgs/logo-ingcorp.png"
@@ -84,7 +86,7 @@ export function Lists() {
         </div>
       </header>
       <div className="main-content">
-        <div className="side-menu">
+        <div className={openMenu ? "side-menu" : "no-side-menu"}>
           <div className="container-icons">
             <div className="icon-div">
               <img src="./imgs/speed-icon-listas.svg" alt="" />
@@ -194,7 +196,6 @@ export function Lists() {
               className="icone-main"
             />
             <div className="table-list">
-              {/* <DenseTable /> */}
               <Table />
             </div>
           </div>

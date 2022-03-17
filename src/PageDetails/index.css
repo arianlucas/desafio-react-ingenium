@@ -3,20 +3,149 @@
   background: #e5e5e5;
 }
 
-.main-content {
-  display: flex;
-  height: 100vh;
-}
-
-.side-menu {
+.case-details_header {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1.2rem;
+  padding: 0px;
 
-  width: 6.4rem;
-  min-height: 100vh;
+  width: 100%;
+  height: 5.2rem;
 
-  background: #ffffff;
-  margin: 0;
+  border-bottom: 1px solid #e9ebf5;
+
+  margin-bottom: 2.4rem;
+}
+
+.container-case-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+  height: 4rem;
+}
+
+.div-select_case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.div-select_case h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #0e0e58;
+}
+
+div.css-19h1q1s-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  color: #5b78ff;
+}
+
+div.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 25.7rem;
+  height: 100%;
+
+  border: 1px solid #828292;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.div-select_case2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 49%;
+  height: 3.4rem;
+}
+
+.case2-part1 {
+  display: flex;
+  gap: 2.4rem;
+}
+
+div.css-u384ra-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+
+  color: #45c777;
+  background: #adffd0;
+  border: 1px solid #45c777;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.infos-user-case {
+  gap: 0.6rem;
+}
+
+.infos-user-case,
+.user-name-case {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.user-img-case {
+  border-radius: 50%;
+}
+
+.user-name-case {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+
+  color: #3e3f44;
+}
+
+.button-remove {
+  all: unset;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 0.4rem;
+
+  height: 2.4rem;
+
+  cursor: pointer;
+}
+
+.button-remove p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #f7404e;
 }
