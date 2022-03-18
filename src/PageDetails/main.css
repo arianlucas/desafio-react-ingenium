@@ -1,4 +1,23 @@
 .principal-content {
   width: 100%;
   height: inherit;
+
+  display: flex;
+}
+
+.left-principal,
+.right-principal {
+  height: 100%;
+}
+
+.left-principal {
+  width: 51%;
+}
+
+.right-principal {
+  width: 49%;
+}
+
+.left1-div {
+  display: flex;
 }

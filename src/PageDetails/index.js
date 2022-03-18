@@ -134,7 +134,7 @@ export function Details() {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={"202101054820634"}
-                    sx={{ width: "25rem", height: "4rem" }}
+                    sx={{ width: "25.7rem", height: "4rem" }}
                   >
                     <MenuItem key={202101054820634} value={202101054820634}>
                       202101054820634
@@ -178,7 +178,53 @@ export function Details() {
               </div>
             </div>
 
-            <div className="principal-content"></div>
+            <div className="principal-content">
+              <div className="left-principal">
+                <div className="left1">
+                  <div className="left1-div">
+                    <div className="left1-div1">
+                      <p>Contatos: </p>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={"Selecione"}
+                        sx={{ width: "25.7rem", height: "4rem" }}
+                      >
+                        <MenuItem key={202101054820634} value={"Selecione"}>
+                          Selecione
+                        </MenuItem>
+                      </Select>
+                    </div>
+                    <div className="left1-div1">
+                      <p>Empresa: </p>
+                      <p>Ingenium System</p>
+                    </div>
+                    <div className="left1-div1">
+                      <p>Prioridade:</p>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={"Selecione"}
+                        sx={{ width: "25.7rem", height: "4rem" }}
+                      >
+                        <MenuItem key={202101054820634} value={"Selecione"}>
+                          <img src="/imgs/bandeira-verde.png" alt="" />
+                          Baixa
+                        </MenuItem>
+                      </Select>
+                    </div>
+                    <div className="left1-div1"></div>
+                  </div>
+                  <div className="left1-div"></div>
+                  <div className="left1-div"></div>
+                </div>
+                <div className="left2"></div>
+                <div className="left3"></div>
+                <div className="left4"></div>
+                <div className="left5"></div>
+              </div>
+              <div className="right-principal"></div>
+            </div>
           </div>
         </div>
       </div>
