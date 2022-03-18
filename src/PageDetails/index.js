@@ -14,6 +14,8 @@ import Fab from "@mui/material/Fab";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import CallIcon from "@mui/icons-material/Call";
 import MenuItem from "@mui/material/MenuItem";
+import EventIcon from "@mui/icons-material/Event";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 export function Details() {
   let navigate = useNavigate();
@@ -183,12 +185,12 @@ export function Details() {
                 <div className="left1">
                   <div className="left1-div">
                     <div className="left1-div1">
-                      <p>Contatos: </p>
+                      <p className="poppins titles-leftdiv">Contatos: </p>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         value={"Selecione"}
-                        sx={{ width: "25.7rem", height: "4rem" }}
+                        sx={{ width: "26.9rem", height: "4rem" }}
                       >
                         <MenuItem key={202101054820634} value={"Selecione"}>
                           Selecione
@@ -196,16 +198,16 @@ export function Details() {
                       </Select>
                     </div>
                     <div className="left1-div1">
-                      <p>Empresa: </p>
+                      <p className="poppins titles-leftdiv">Empresa: </p>
                       <p>Ingenium System</p>
                     </div>
                     <div className="left1-div1">
-                      <p>Prioridade:</p>
+                      <p className="poppins titles-leftdiv">Prioridade:</p>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         value={"Selecione"}
-                        sx={{ width: "25.7rem", height: "4rem" }}
+                        sx={{ width: "9.5rem", height: "2.4rem" }}
                       >
                         <MenuItem key={202101054820634} value={"Selecione"}>
                           <img src="/imgs/bandeira-verde.png" alt="" />
@@ -213,15 +215,125 @@ export function Details() {
                         </MenuItem>
                       </Select>
                     </div>
-                    <div className="left1-div1"></div>
+                    <div className="left1-div1">
+                      <p className="poppins titles-leftdiv">Canal de Origem:</p>
+                      <div className="origin-chanel">
+                        <img
+                          src="imgs/redes-sociais/whats-tarefas.svg"
+                          alt=""
+                        />
+                        <p>Whatsapp</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="left1-div"></div>
-                  <div className="left1-div"></div>
+                  <div className="left1-div">
+                    <div className="left1-div2">
+                      <p className="poppins titles-leftdiv">Prazo: </p>
+                      <div className="div2-buttons">
+                        <Button
+                          endIcon={<EventIcon />}
+                          className="date-button"
+                          sx={{ width: "18.3rem", height: "4rem" }}
+                        >
+                          12 de Dezembro, 2021
+                        </Button>
+                        <Button
+                          endIcon={<AccessTimeIcon />}
+                          className="date-button"
+                          sx={{ width: "8.3rem", height: "4rem" }}
+                        >
+                          00:00
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="left1-div2">
+                      <p className="poppins titles-leftdiv">Solicitação: </p>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={"Selecione"}
+                        sx={{ width: "16.7rem", height: "4rem" }}
+                      >
+                        <MenuItem key={202101054820634} value={"Selecione"}>
+                          Selecione
+                        </MenuItem>
+                      </Select>
+                    </div>
+                    <div className="left1-div2">
+                      <p className="poppins titles-leftdiv">Motivo: </p>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={"Selecione"}
+                        sx={{ width: "16.7rem", height: "4rem" }}
+                      >
+                        <MenuItem key={202101054820634} value={"Selecione"}>
+                          Selecione
+                        </MenuItem>
+                      </Select>
+                    </div>
+                  </div>
+                  <div className="left1-div">
+                    <img src="imgs/redes-sociais/fone-tarefas.svg" alt="" />
+                    <p>Selecione o canal de comunicação</p>
+                    <div className="icons-redes-sociais">
+                      <img src="imgs/redes-sociais/tell-tarefas.svg" alt="" />
+                      <img src="imgs/redes-sociais/whats-tarefas.svg" alt="" />
+                      <img src="imgs/redes-sociais/mail-2-tarefas.svg" alt="" />
+                      <img src="imgs/redes-sociais/air-tarefas.svg" alt="" />
+                      <img
+                        src="imgs/redes-sociais/instagram-tarefas.svg"
+                        alt=""
+                      />
+                      <img
+                        src="imgs/redes-sociais/twitter-tarefas.svg"
+                        alt=""
+                      />
+                      <img
+                        src="imgs/redes-sociais/facebook-tarefas.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div className="left2"></div>
-                <div className="left3"></div>
-                <div className="left4"></div>
-                <div className="left5"></div>
+                <div className="left2">
+                  <div className="div-left2">
+                    <p className="poppins titles-leftdiv">Assunto: </p>
+                    <img src="imgs/edit-icon-tarefas.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+                    non, facilisi diam vulputate. A non, facilisi diam
+                    vulputate. A non, facilisi diam vulputate. A non, facilisi
+                    diam vulputate. A non, facilisi diam vulputate.{" "}
+                  </p>
+                </div>
+                <div className="left3">
+                  <div className="header-left3">
+                    <img src="imgs/note-tarefas.svg" alt="" />
+                    <p>Descrição do Caso</p>
+                    <img src="imgs/edit-icon-tarefas.png" alt="" />
+                  </div>
+                  <div className="main-left3">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="left4">
+                  <div className="header-left34"></div>
+                  <div className="main-left4"></div>
+                </div>
               </div>
               <div className="right-principal"></div>
             </div>
