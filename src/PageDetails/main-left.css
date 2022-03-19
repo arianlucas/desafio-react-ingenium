@@ -230,6 +230,8 @@ button.css-1fwdfk8-MuiButtonBase-root-MuiButton-root {
 
 .left1-redes-sociais {
   width: 90%;
+  justify-content: flex-start;
+  gap: 0.8rem;
 }
 
 .header-features {
@@ -253,7 +255,7 @@ button.css-1fwdfk8-MuiButtonBase-root-MuiButton-root {
   width: 42.7%;
 
   display: flex;
-  justify-content: space-between;
+  gap: 0.8rem;
 }
 
 .div-left2 {
