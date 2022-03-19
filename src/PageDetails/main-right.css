@@ -2,7 +2,11 @@
   width: 49%;
   height: 100%;
 
-  padding-top: 2.4rem;
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu-control {
@@ -35,6 +39,8 @@
   align-items: center;
 
   gap: 1rem;
+
+  cursor: pointer;
 }
 
 .container-options-menu p {
@@ -47,6 +53,14 @@
 
 .container-options-menu .blue-option {
   color: #5b78ff;
+}
+
+.body-right {
+  height: 87%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-body {
@@ -79,6 +93,245 @@
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 18px;
+
+  color: #ffffff;
+}
+
+.main-body {
+  width: 100%;
+  height: 76.8%;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 1.2rem;
+
+  padding-right: 1.2rem;
+}
+
+.main-body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.main-body::-webkit-scrollbar-track {
+  background: #c2cfe0;
+  border-radius: 100px;
+}
+
+.main-body::-webkit-scrollbar-thumb {
+  background: #3758cc;
+  border-radius: 100px;
+}
+
+.cards-tarefas {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  gap: 1.2rem;
+}
+
+.card-tarefas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.2rem;
+
+  background: #ffffff;
+
+  border: 1px solid #bcbfd0;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  gap: 1rem;
+}
+
+.head-cards-tarefas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+}
+
+.head1-tarefas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.head1-tarefas p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #828292;
+
+  margin-right: 1.8rem;
+}
+
+.title-cards-tarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 100%;
+  gap: 0.2rem;
+}
+
+.principal-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  color: #3e3f44;
+}
+
+.second-title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 15px;
+
+  color: #3e3f44;
+}
+
+.tags-cards-tarefas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+  gap: 0.4rem;
+}
+
+.tag-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.4rem;
+
+  background: #5b78ff;
+  border-radius: 50px;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 15px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.more-tarefas {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #5b78ff;
+}
+
+.footer-cards-tarefas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+}
+
+.footer1-tarefas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.footer2-tarefas {
+  width: 41.8%;
+}
+
+.button-concluided,
+.button-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.button-concluided {
+  background: #adffd0;
+
+  border: 1px solid #45c777;
+}
+
+.button-todo {
+  background: #bdeeff;
+
+  border: 1px solid #5b78ff;
+}
+
+.button-concluided p,
+.button-todo p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
+.button-concluided p {
+  color: #45c777;
+}
+
+.button-todo p {
+  color: #5b78ff;
+}
+
+.separator-body-right {
+  width: 100%;
+  border: 1px solid #d9dae1;
+}
+
+.add-button-right {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+
+  width: 100%;
+
+  background: #5b78ff;
+  border-radius: 4px;
+}
+
+.add-button-right p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
 
   color: #ffffff;
 }

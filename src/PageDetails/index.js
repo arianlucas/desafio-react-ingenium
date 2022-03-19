@@ -31,6 +31,7 @@ export function Details() {
     "imgs/file-mp4-tarefas.svg",
     "imgs/file-jpeg-tarefas.svg",
   ];
+  const cardTarefas = [1, 2, 3];
 
   return (
     <div className="Details">
@@ -317,7 +318,11 @@ export function Details() {
                 <div className="left2">
                   <div className="div-left2">
                     <p className="poppins titles-leftdiv">Assunto: </p>
-                    <img src="imgs/edit-icon-tarefas.png" alt="" />
+                    <img
+                      src="imgs/edit-icon-tarefas.png"
+                      alt="Botão de edição"
+                      className="icon-edit"
+                    />
                   </div>
                   <p className="poppins">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
@@ -332,7 +337,11 @@ export function Details() {
                     <p className="poppins titles-header-left">
                       Descrição do Caso
                     </p>
-                    <img src="imgs/edit-icon-tarefas.png" alt="" />
+                    <img
+                      src="imgs/edit-icon-tarefas.png"
+                      alt="Botão de Edição"
+                      className="icon-edit"
+                    />
                   </div>
                   <div className="main-left3">
                     <p className="poppins">
@@ -396,7 +405,9 @@ export function Details() {
               </div>
               <div className="right-principal">
                 <div className="menu-control">
-                  <KeyboardArrowLeftIcon sx={{ cursor: "pointer" }} />
+                  <KeyboardArrowLeftIcon
+                    sx={{ cursor: "pointer", color: "#D9DAE1" }}
+                  />
                   <div className="principal-menu-control">
                     <div className="options-menu">
                       <div className="container-options-menu">
@@ -426,14 +437,143 @@ export function Details() {
                       </div>
                     </div>
                   </div>
-                  <ChevronRightIcon sx={{ cursor: "pointer" }} />
+                  <ChevronRightIcon
+                    sx={{ cursor: "pointer", color: "#D9DAE1" }}
+                  />
                 </div>
                 <div className="body-right">
                   <div className="header-body">
                     <h1 className="poppins">Tarefas vinculadas ao caso</h1>
                     <div className="quantity poppins">08</div>
                   </div>
-                  <div className="main-body"></div>
+                  <div className="main-body">
+                    {cardTarefas.map((tarefas) => (
+                      <div className="cards-tarefas" key={tarefas}>
+                        <div className="card-tarefas">
+                          <div className="head-cards-tarefas">
+                            <div className="head1-tarefas">
+                              <EventIcon
+                                sx={{ color: "#C2CFE0", mr: "0.6rem" }}
+                                fontSize="large"
+                              />
+                              <p className="poppins">14 de Dezembro, 2021</p>
+                              <img
+                                src="imgs/cards-tarefas/sino-tarefas.svg"
+                                alt="Sino de tarefas"
+                              />
+                            </div>
+                            <div className="head2-tarefas">
+                              <img
+                                src="imgs/cards-tarefas/threedot-tarefas.svg"
+                                alt="Três pontos menu"
+                              />
+                            </div>
+                          </div>
+                          <div className="title-cards-tarefas">
+                            <p className="poppins principal-title">
+                              Nome da tarefa
+                            </p>
+                            <p className="poppins second-title">
+                              Sint ex excepteur proident adipisicing adipisicing
+                              occaecat pariatur. Aadipisicing occaecat pariatur.
+                            </p>
+                          </div>
+                          <div className="tags-cards-tarefas">
+                            <img
+                              src="imgs/cards-tarefas/tag-tarefas.svg"
+                              alt=""
+                            />
+                            <div className="tag-div poppins">Web Design</div>
+                            <div className="tag-div poppins">Web Design</div>
+                            <p className="poppins more-tarefas">+4</p>
+                          </div>
+                          <div className="footer-cards-tarefas">
+                            <div className="footer1-tarefas">
+                              <img
+                                src="imgs/cards-tarefas/user-card-tarefas.svg"
+                                alt="Simbolo do usuário"
+                              />
+                              <div className="pictures-tarefas">
+                                <img
+                                  src="imgs/cards-tarefas/users-tarefas.png"
+                                  alt="Imagem do perfil"
+                                />
+                              </div>
+                              <p className="poppins more-tarefas">+4</p>
+                            </div>
+                            <div className="footer2-tarefas">
+                              <div className="button-concluided">
+                                <p className="poppins">Concluído</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="card-tarefas">
+                          <div className="head-cards-tarefas">
+                            <div className="head1-tarefas">
+                              <EventIcon
+                                sx={{ color: "#C2CFE0", mr: "0.6rem" }}
+                                fontSize="large"
+                              />
+                              <p className="poppins">14 de Dezembro, 2021</p>
+                              <img
+                                src="imgs/cards-tarefas/lembrete-tarefas.png"
+                                alt="Sino de tarefas"
+                              />
+                            </div>
+                            <div className="head2-tarefas">
+                              <img
+                                src="imgs/cards-tarefas/threedot-tarefas.svg"
+                                alt="Três pontos menu"
+                              />
+                            </div>
+                          </div>
+                          <div className="title-cards-tarefas">
+                            <p className="poppins principal-title">
+                              Nome da tarefa
+                            </p>
+                            <p className="poppins second-title">
+                              Sint ex excepteur proident adipisicing adipisicing
+                              occaecat pariatur. Aadipisicing occaecat pariatur.
+                            </p>
+                          </div>
+                          <div className="tags-cards-tarefas">
+                            <img
+                              src="imgs/cards-tarefas/tag-tarefas.svg"
+                              alt=""
+                            />
+                            <div className="tag-div poppins">Web Design</div>
+                            <div className="tag-div poppins">Web Design</div>
+                            <p className="poppins more-tarefas">+4</p>
+                          </div>
+                          <div className="footer-cards-tarefas">
+                            <div className="footer1-tarefas">
+                              <img
+                                src="imgs/cards-tarefas/user-card-tarefas.svg"
+                                alt="Simbolo do usuário"
+                              />
+                              <div className="pictures-tarefas">
+                                <img
+                                  src="imgs/cards-tarefas/users-tarefas.png"
+                                  alt="Imagem do perfil"
+                                />
+                              </div>
+                              <p className="poppins more-tarefas">+4</p>
+                            </div>
+                            <div className="footer2-tarefas">
+                              <div className="button-todo">
+                                <p className="poppins">A Fazer</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="separator-body-right"></div>
+                  <button className="add-button-right">
+                    <p className="poppins">Adicionar tarefa</p>
+                  </button>
                 </div>
               </div>
             </div>
