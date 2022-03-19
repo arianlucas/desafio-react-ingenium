@@ -148,14 +148,14 @@ export function Lists() {
               </Button>
               <div className="date-container">
                 <Button
-                  endIcon={<EventIcon sx={{ color: "#C2CFE0git" }} />}
+                  endIcon={<EventIcon sx={{ color: "#C2CFE0" }} />}
                   className="date-button"
                 >
                   12 de Dezembro, 2021
                 </Button>
                 <p className="poppins">até</p>
                 <Button
-                  endIcon={<EventIcon sx={{ color: "#C2CFE0git" }} />}
+                  endIcon={<EventIcon sx={{ color: "#C2CFE0" }} />}
                   className="date-button"
                 >
                   12 de Dezembro, 2021
