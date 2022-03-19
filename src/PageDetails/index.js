@@ -1,7 +1,8 @@
 import "../global.css";
 import "./header-detail.css";
 import "./index.css";
-import "./main.css";
+import "./main-left.css";
+import "./main-right.css";
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
@@ -16,10 +17,20 @@ import CallIcon from "@mui/icons-material/Call";
 import MenuItem from "@mui/material/MenuItem";
 import EventIcon from "@mui/icons-material/Event";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export function Details() {
   let navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(true);
+
+  const archiveRows = [
+    "imgs/file-txt-tarefas.svg",
+    "imgs/file-mp4-tarefas.svg",
+    "imgs/file-jpeg-tarefas.svg",
+  ];
 
   return (
     <div className="Details">
@@ -184,36 +195,39 @@ export function Details() {
               <div className="left-principal">
                 <div className="left1">
                   <div className="left1-div">
-                    <div className="left1-div1">
+                    <div className="left1-div1 input-left1-div1">
                       <p className="poppins titles-leftdiv">Contatos: </p>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         value={"Selecione"}
-                        sx={{ width: "26.9rem", height: "4rem" }}
+                        sx={{ width: "100%", height: "4rem" }}
                       >
-                        <MenuItem key={202101054820634} value={"Selecione"}>
+                        <MenuItem
+                          key={202101054820634}
+                          value={"Selecione"}
+                          className="selected-item"
+                        >
                           Selecione
                         </MenuItem>
                       </Select>
                     </div>
                     <div className="left1-div1">
                       <p className="poppins titles-leftdiv">Empresa: </p>
-                      <p>Ingenium System</p>
+                      <p className="poppins subtitles-leftdiv">
+                        Ingenium System
+                      </p>
                     </div>
-                    <div className="left1-div1">
+                    <div className="left1-div1 input2-left1-div1">
                       <p className="poppins titles-leftdiv">Prioridade:</p>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={"Selecione"}
-                        sx={{ width: "9.5rem", height: "2.4rem" }}
-                      >
-                        <MenuItem key={202101054820634} value={"Selecione"}>
-                          <img src="/imgs/bandeira-verde.png" alt="" />
-                          Baixa
-                        </MenuItem>
-                      </Select>
+                      <div className="fake-select">
+                        <img
+                          src="/imgs/bandeira-verde2.png"
+                          alt="Bandeira Verde"
+                        />
+                        <span className="poppins">Baixa</span>
+                        <img src="/imgs/arrow-down.png" alt="" />
+                      </div>
                     </div>
                     <div className="left1-div1">
                       <p className="poppins titles-leftdiv">Canal de Origem:</p>
@@ -222,50 +236,50 @@ export function Details() {
                           src="imgs/redes-sociais/whats-tarefas.svg"
                           alt=""
                         />
-                        <p>Whatsapp</p>
+                        <p className="poppins">Whatsapp</p>
                       </div>
                     </div>
                   </div>
                   <div className="left1-div">
-                    <div className="left1-div2">
+                    <div className="left1-div2 buttons-left1-div2">
                       <p className="poppins titles-leftdiv">Prazo: </p>
                       <div className="div2-buttons">
                         <Button
-                          endIcon={<EventIcon />}
-                          className="date-button"
-                          sx={{ width: "18.3rem", height: "4rem" }}
+                          endIcon={<EventIcon sx={{ color: "#C2CFE0" }} />}
+                          className="calendar-button"
+                          sx={{ width: "66.8%", height: "4rem" }}
                         >
                           12 de Dezembro, 2021
                         </Button>
                         <Button
-                          endIcon={<AccessTimeIcon />}
+                          endIcon={<AccessTimeIcon sx={{ color: "#C2CFE0" }} />}
                           className="date-button"
-                          sx={{ width: "8.3rem", height: "4rem" }}
+                          sx={{ width: "30.3%", height: "4rem" }}
                         >
                           00:00
                         </Button>
                       </div>
                     </div>
-                    <div className="left1-div2">
+                    <div className="left1-div2 inputs-left1-div2">
                       <p className="poppins titles-leftdiv">Solicitação: </p>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         value={"Selecione"}
-                        sx={{ width: "16.7rem", height: "4rem" }}
+                        sx={{ width: "100%", height: "4rem" }}
                       >
                         <MenuItem key={202101054820634} value={"Selecione"}>
                           Selecione
                         </MenuItem>
                       </Select>
                     </div>
-                    <div className="left1-div2">
+                    <div className="left1-div2 inputs-left1-div2">
                       <p className="poppins titles-leftdiv">Motivo: </p>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         value={"Selecione"}
-                        sx={{ width: "16.7rem", height: "4rem" }}
+                        sx={{ width: "100%", height: "4rem" }}
                       >
                         <MenuItem key={202101054820634} value={"Selecione"}>
                           Selecione
@@ -273,9 +287,13 @@ export function Details() {
                       </Select>
                     </div>
                   </div>
-                  <div className="left1-div">
-                    <img src="imgs/redes-sociais/fone-tarefas.svg" alt="" />
-                    <p>Selecione o canal de comunicação</p>
+                  <div className="left1-div left1-redes-sociais">
+                    <div className="header-features">
+                      <img src="imgs/redes-sociais/fone-tarefas.svg" alt="" />
+                      <p className="poppins titles-header-left">
+                        Selecione o canal de comunicação
+                      </p>
+                    </div>
                     <div className="icons-redes-sociais">
                       <img src="imgs/redes-sociais/tell-tarefas.svg" alt="" />
                       <img src="imgs/redes-sociais/whats-tarefas.svg" alt="" />
@@ -301,7 +319,7 @@ export function Details() {
                     <p className="poppins titles-leftdiv">Assunto: </p>
                     <img src="imgs/edit-icon-tarefas.png" alt="" />
                   </div>
-                  <p>
+                  <p className="poppins">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
                     non, facilisi diam vulputate. A non, facilisi diam
                     vulputate. A non, facilisi diam vulputate. A non, facilisi
@@ -311,11 +329,13 @@ export function Details() {
                 <div className="left3">
                   <div className="header-left3">
                     <img src="imgs/note-tarefas.svg" alt="" />
-                    <p>Descrição do Caso</p>
+                    <p className="poppins titles-header-left">
+                      Descrição do Caso
+                    </p>
                     <img src="imgs/edit-icon-tarefas.png" alt="" />
                   </div>
                   <div className="main-left3">
-                    <p>
+                    <p className="poppins">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when an unknown
@@ -331,11 +351,91 @@ export function Details() {
                   </div>
                 </div>
                 <div className="left4">
-                  <div className="header-left34"></div>
-                  <div className="main-left4"></div>
+                  <div className="header-left4">
+                    <AttachFileIcon fontSize="large" />
+                    <p className="poppins titles-header-left">Anexos</p>
+                  </div>
+                  <div className="main-left4">
+                    <div className="upload-archive">
+                      <label htmlFor="arquivos" className="label-arquivos">
+                        <img src="imgs/upload-tarefas.svg" alt="" />
+                        <p className="poppins">Solte seu arquivo aqui</p>
+                      </label>
+                      <input
+                        type="file"
+                        id="arquivos"
+                        className="archive-input"
+                      />
+                    </div>
+                    <div className="archives-uploaded">
+                      {archiveRows.map((arqfile) => (
+                        <div className="archive-row" key={arqfile}>
+                          <img src={arqfile} alt="" />
+                          <div className="archive-infos">
+                            <div className="header-arq-infos">
+                              <div className="arq-infos">
+                                <p className="poppins firstp">Name-Photo.jpg</p>
+                                <p className="poppins secondp">1.4 MB</p>
+                              </div>
+                              <div className="arq-infos">
+                                <p className="poppins download-arq-infos">
+                                  Download
+                                </p>
+                                <img src="imgs/del-2-tarefas.svg" alt="" />
+                              </div>
+                            </div>
+                            <p className="poppins archive-principalp">
+                              Courtney Henry
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="right-principal"></div>
+              <div className="right-principal">
+                <div className="menu-control">
+                  <KeyboardArrowLeftIcon sx={{ cursor: "pointer" }} />
+                  <div className="principal-menu-control">
+                    <div className="options-menu">
+                      <div className="container-options-menu">
+                        <img src="imgs/menu/message-tarefas.svg" alt="" />
+                        <p className="poppins"> Comentários</p>
+                      </div>
+                    </div>
+                    <div className="options-menu">
+                      <div className="container-options-menu">
+                        <img src="imgs/menu/interacao-tarefas.svg" alt="" />
+                        <p className="poppins"> Interações</p>
+                      </div>
+                    </div>
+                    <div className="options-menu blue-border-option">
+                      <div className="container-options-menu">
+                        <img src="imgs/menu/todo-tarefas.svg" alt="" />
+                        <p className="poppins blue-option"> Tarefas</p>
+                      </div>
+                    </div>
+                    <div className="options-menu">
+                      <div className="container-options-menu">
+                        <EmailOutlinedIcon
+                          fontSize="large"
+                          sx={{ color: "#828292" }}
+                        />
+                        <p className="poppins"> Comunicados</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ChevronRightIcon sx={{ cursor: "pointer" }} />
+                </div>
+                <div className="body-right">
+                  <div className="header-body">
+                    <h1 className="poppins">Tarefas vinculadas ao caso</h1>
+                    <div className="quantity poppins">08</div>
+                  </div>
+                  <div className="main-body"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

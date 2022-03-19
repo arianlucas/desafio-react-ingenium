@@ -1,0 +1,398 @@
+.principal-content {
+  width: 100%;
+  height: inherit;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-principal {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left1,
+.left2,
+.left3,
+.left4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left1 {
+  height: 30%;
+}
+
+.left3 {
+  height: 26.6%;
+}
+
+.left4 {
+  height: 24%;
+}
+
+.left1-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left1-div1,
+.left1-div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-left1-div1 {
+  width: 42.5%;
+}
+
+.input2-left1-div1 {
+  width: 15%;
+}
+
+.titles-leftdiv {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+
+  color: #27282e;
+}
+
+.subtitles-leftdiv {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #3e3f44;
+}
+
+.fake-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fake-select span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+
+  color: #27282e;
+}
+
+div.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 62%;
+  height: 100%;
+}
+
+div.css-rnolvu-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  color: #828292;
+}
+
+.origin-chanel {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.origin-chanel p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+
+  color: #27282e;
+}
+
+.buttons-left1-div2 {
+  width: 43.3%;
+}
+
+.div2-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calendar-button.css-11jl525-MuiButtonBase-root-MuiButton-root,
+.date-button.css-1ykcaq1-MuiButtonBase-root-MuiButton-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  text-transform: none;
+  color: #3e3f44;
+}
+
+.calendar-button.css-11jl525-MuiButtonBase-root-MuiButton-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
+
+  border: 0.1rem solid #828292;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.calendar-button p {
+  width: 100%;
+}
+
+.date-button.css-1ykcaq1-MuiButtonBase-root-MuiButton-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
+
+  border: 0.1rem solid #828292;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.inputs-left1-div2 {
+  width: 26.4%;
+}
+
+button.css-1oplvmg-MuiButtonBase-root-MuiButton-root,
+button.css-1fwdfk8-MuiButtonBase-root-MuiButton-root {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  color: #3e3f44;
+
+  text-transform: none;
+}
+
+button.css-1oplvmg-MuiButtonBase-root-MuiButton-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
+
+  border: 1px solid #828292;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button.css-1fwdfk8-MuiButtonBase-root-MuiButton-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
+
+  border: 1px solid #828292;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.left1-redes-sociais {
+  width: 90%;
+}
+
+.header-features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  gap: 1.2rem;
+}
+
+.titles-header-left {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  color: #0e0e58;
+}
+
+.icons-redes-sociais {
+  width: 42.7%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-left2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.5%;
+}
+
+.left2 p {
+  width: 100%;
+  height: 62%;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #3e3f44;
+}
+
+.header-left3,
+.header-left4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.main-left3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1.6rem;
+
+  background: #ffffff;
+
+  border: 1px solid #828292;
+  border-radius: 4px;
+}
+
+.main-left3 p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  color: #27282e;
+}
+
+.main-left4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.upload-archive {
+  width: 40.4%;
+}
+
+.label-arquivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 5.6rem;
+
+  border: 1px dashed #828292;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 100%;
+}
+
+.label-arquivos p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #bcbfd0;
+}
+
+.archive-input {
+  display: none;
+}
+
+.archives-uploaded {
+  display: flex;
+  flex-direction: column;
+  width: 57%;
+  gap: 0.8rem;
+}
+
+.archive-infos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.archive-row,
+.arq-infos {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.archive-row {
+  gap: 1.6rem;
+}
+
+.header-arq-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-arq-infos {
+  font-weight: 500;
+  font-size: 1.05214rem;
+  line-height: 16px;
+
+  text-align: right;
+
+  color: #5b78ff;
+}
+
+.firstp {
+  font-weight: 700;
+  font-size: 12.275px;
+  line-height: 18px;
+
+  color: #3e3f44;
+}
+
+.secondp {
+  font-weight: 400;
+  font-size: 10.5214px;
+  line-height: 16px;
+
+  text-align: right;
+
+  color: #3e3f44;
+}
+
+.archive-principalp {
+  font-weight: 400;
+  font-size: 1.05214rem;
+  line-height: 16px;
+
+  color: #828292;
+}
