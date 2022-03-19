@@ -11,7 +11,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2.4rem;
 }
 
 .left1,
@@ -20,8 +20,17 @@
 .left4 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
+}
+
+.left1,
+.left2 {
+  justify-content: space-between;
+}
+
+.left3,
+.left4 {
+  gap: 0.8rem;
 }
 
 .left1 {
@@ -297,6 +306,7 @@ button.css-1fwdfk8-MuiButtonBase-root-MuiButton-root {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 
 .upload-archive {
